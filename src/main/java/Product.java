@@ -18,12 +18,7 @@ public class Product {
     public static List<Product> allProducts() throws Exception {
         List<Product> products = new ArrayList<>();
 
-        File file = new File("./production_data.json");
-        String content = FileUtils.readFileToString(file, "utf-8");
-
-        JSONObject obj = new JSONObject(content);
-
-        JSONArray arr = obj.getJSONArray("products");
+        JSONArray arr = Data.returnProductJson();
         for (int i = 0; i < arr.length(); i++) {
             String name  = arr.getJSONObject(i).getString("name");
             products.add(new Product(i, name));
