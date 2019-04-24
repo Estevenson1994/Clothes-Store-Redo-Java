@@ -1,133 +1,133 @@
-{
-  "1": {
+{"products" : [
+   {
     "name": "Almond Toe Court Shoes",
-    "colour": "Patent Black"
+    "colour": "Patent Black",
     "gender": "Women",
-    "type": "Footwear"
+    "type": "Footwear",
     "price": [
       99.00
     ],
     "stock": 5
   },
-  "2": {
+  {
     "name": "Suede Shoes",
-    "colour": "Blue"
+    "colour": "Blue",
     "gender": "Women",
-    "type": "Footwear"
+    "type": "Footwear",
     "price": [
       42.00
     ],
     "stock": 4
   },
-  "3": {
+  {
     "name": "Leather Driver Saddle Loafers",
-    "colour": "Tan"
+    "colour": "Tan",
     "gender": "Men",
-    "type": "Footwear"
+    "type": "Footwear",
     "price": [
       34.00
     ],
     "stock": 12
   },
-  "4": {
+  {
     "name": "Flip Flops",
-    "colour": "Red"
+    "colour": "Red",
     "gender": "Men",
-    "type": "Footwear"
+    "type": "Footwear",
     "price": [
       19.00
     ],
     "stock": 6
   },
-  "5": {
+  {
     "name": "Flip Flops",
-    "colour": "Blue"
+    "colour": "Blue",
     "gender": "Men",
-    "type": "Footwear"
+    "type": "Footwear",
     "price": [
       19.00
     ],
     "stock": 0
   },
-  "6": {
+  {
     "name": "Gold Button Cardigan",
-    "colour": "Black"
+    "colour": "Black",
     "gender": "Women",
-    "type": "Casual wear"
+    "type": "Casual wear",
     "price": [
       167.00
     ],
     "stock": 6
   },
-  "7": {
+   {
     "name": "Cotton Shorts",
-    "colour": "Medium Red"
+    "colour": "Medium Red",
     "gender": "Women",
-    "type": "Casual wear"
+    "type": "Casual wear",
     "price": [
       30.00
     ],
     "stock": 5
   },
-  "8": {
+   {
     "name": "Fine Stripe Short Sleeve Shirt",
-    "colour": "Grey"
+    "colour": "Grey",
     "gender": "Men",
-    "type": "Causal wear"
+    "type": "Causal wear",
     "price": [
       49.00
     ],
     "stock": 9
   },
-  "9": {
+   {
     "name": "Fine Stripe Short Sleeve Shirt",
-    "colour": "Green"
+    "colour": "Green",
     "gender": "Men",
-    "type": "Casual wear"
+    "type": "Casual wear",
     "price": [
       49.00,
       39.00
     ],
     "stock": 3
   },
-  "10": {
+  {
     "name": "Sharkskin Waistcoat",
-    "colour": "Charcoal"
+    "colour": "Charcoal",
     "gender": "Men",
-    "type": "Formal wear"
+    "type": "Formal wear",
     "price": [
       75.00
     ],
     "stock": 2
   },
-  "11": {
+   {
     "name": "Lightweight Patch Pocket Blazer",
-    "colour": "Deer"
+    "colour": "Deer",
     "gender": "Men",
-    "type": "Formal wear"
+    "type": "Formal wear",
     "price": [
       175.00
     ],
     "stock": 1
   },
-  "12": {
+  {
     "name": "Bird Print Dress",
-    "colour": "Black"
+    "colour": "Black",
     "gender": "Women",
-    "type": "Formal wear"
+    "type": "Formal wear",
     "price": [
       270.00
     ],
     "stock": 10
   },
-  "13": {
+  {
     "name": "Mid Twist Cut-Out Dress",
-    "colour": "pink"
+    "colour": "pink",
     "gender": "Women",
-    "type": "Formal wear"
+    "type": "Formal wear",
     "price": [
       540.00
     ],
     "stock": 5
-  }
+  }]
 }
