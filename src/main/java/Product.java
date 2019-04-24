@@ -31,5 +31,9 @@ public class Product {
         return products;
     }
 
+    public static Product find(int id) throws Exception {
+        return allProducts().get(id);
+    }
+
 
 }

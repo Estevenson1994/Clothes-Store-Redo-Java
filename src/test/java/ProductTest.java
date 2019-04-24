@@ -42,5 +42,12 @@ public class ProductTest {
         assertEquals("Mid Twist Cut-Out Dress", last.name);
     }
 
+    @Test
+    public void testFindReturnsCorrectProduct() throws Exception {
+        Product dress = Product.find(11);
+        assertEquals(11, dress.id);
+        assertEquals("Bird Print Dress", dress.name);
+    }
+
 
 }
