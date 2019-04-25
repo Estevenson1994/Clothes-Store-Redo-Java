@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 
+import static org.hamcrest.core.IsNot.not;
 import static org.hamcrest.core.IsCollectionContaining.hasItems;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
@@ -34,6 +35,12 @@ public class CartTest {
 
     }
 
-
+    @Test
+    public void testCartCanRemoveItemFromBasket() {
+        cart.addItem(mockedCartItem);
+        cart.removeItem(mockedCartItem);
+        assertThat(cart.basket, not(hasItems(mockedCartItem)));
+        assertEquals(0, cart.basket.size());
+    }
 
 }

@@ -14,6 +14,10 @@ public class Cart {
         this.basket.add(item);
     }
 
+    public void removeItem(CartItem item) {
+        this.basket.remove(item);
+    }
+
 
 
 }
