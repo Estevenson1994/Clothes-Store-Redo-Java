@@ -28,5 +28,12 @@ public class CartItemTest {
         assertEquals(1, finalQuantity - initialQuantity);
     }
 
+    @Test
+    public void testCanDecreaseCartItemQuantity() {
+        int initialQuantity = shoes.quantity;
+        shoes.decreaseQuantity();
+        int finalQuantity = shoes.quantity;
+        assertEquals(-1, finalQuantity - initialQuantity);
+    }
 
 }
