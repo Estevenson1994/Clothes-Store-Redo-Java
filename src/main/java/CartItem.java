@@ -7,4 +7,9 @@ public class CartItem {
         this.id = id;
         this.quantity = quantity;
     }
+
+
+    public void increaseQuantity() {
+        this.quantity += 1;
+    }
 }
