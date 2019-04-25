@@ -20,14 +20,19 @@ public class Price {
         JSONArray arr = Data.returnProductJson();
         for (int item = 0; item < arr.length(); item++) {
             JSONArray jsonItemPrices = arr.getJSONObject(item).getJSONArray("price");
-            List<Object> itemPrices = new ArrayList<>();
-            for (int i = 0; i < jsonItemPrices.length(); i++) {
-                itemPrices.add(jsonItemPrices.get(i));
-            }
+            List<Object> itemPrices = getArrayListfromJsonArray(jsonItemPrices);
             prices.add(new Price(item, itemPrices));
         }
         return prices;
 
+    }
+
+    private static List<Object> getArrayListfromJsonArray(JSONArray jsonItemPrices) {
+        List<Object> itemPrices = new ArrayList<>();
+        for (int i = 0; i < jsonItemPrices.length(); i++) {
+            itemPrices.add(jsonItemPrices.get(i));
+        }
+        return itemPrices;
     }
 
 }
