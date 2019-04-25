@@ -27,6 +27,11 @@ public class Price {
 
     }
 
+    public static Price findPrice(int id) throws Exception {
+        return allPrices().get(id);
+
+    }
+
     private static List<Object> getArrayListfromJsonArray(JSONArray jsonItemPrices) {
         List<Object> itemPrices = new ArrayList<>();
         for (int i = 0; i < jsonItemPrices.length(); i++) {

@@ -47,6 +47,14 @@ public class PriceTest {
         assertEquals(lastItemPrices, lastPrice.price);
     }
 
+    @Test
+    public void testFindPriceReturnsCorrectPrice() throws Exception {
+        List<Object> dressPrice = new ArrayList<>( Arrays.asList(270.00));
+        Price dress = Price.findPrice(11);
+        assertEquals(11, dress.id);
+        assertEquals(dressPrice, dress.price);
+    }
+
 
 
 }
