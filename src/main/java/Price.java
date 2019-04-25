@@ -13,4 +13,21 @@ public class Price {
         this.price = price;
     }
 
+
+    public static List<Price> allPrices() throws Exception {
+        List<Price> prices = new ArrayList<>();
+
+        JSONArray arr = Data.returnProductJson();
+        for (int item = 0; item < arr.length(); item++) {
+            JSONArray jsonItemPrices = arr.getJSONObject(item).getJSONArray("price");
+            List<Object> itemPrices = new ArrayList<>();
+            for (int i = 0; i < jsonItemPrices.length(); i++) {
+                itemPrices.add(jsonItemPrices.get(i));
+            }
+            prices.add(new Price(item, itemPrices));
+        }
+        return prices;
+
+    }
+
 }
