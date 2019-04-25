@@ -10,11 +10,13 @@ public class PriceTest {
     public Price price;
     public List<Price> prices;
     public List<Object> firstItemPrices;
+    public List<Object> lastItemPrices;
 
     @Before
     public void beforeEachTestMethod() throws Exception {
         prices = Price.allPrices();
         firstItemPrices = new ArrayList<>( Arrays.asList(99.00));
+        lastItemPrices = new ArrayList<>( Arrays.asList(540.00));
     }
 
     @Test
@@ -36,6 +38,13 @@ public class PriceTest {
         Price firstPrice = prices.get(0);
         assertEquals(0, firstPrice.id);
         assertEquals(firstItemPrices, firstPrice.price);
+    }
+
+    @Test
+    public void testLastPrice() {
+        Price lastPrice = prices.get(12);
+        assertEquals(12, lastPrice.id);
+        assertEquals(lastItemPrices, lastPrice.price);
     }
 
 
