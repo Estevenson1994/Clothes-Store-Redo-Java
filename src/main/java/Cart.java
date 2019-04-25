@@ -10,5 +10,10 @@ public class Cart {
     }
 
 
+    public void addItem(CartItem item) {
+        this.basket.add(item);
+    }
+
+
 
 }
