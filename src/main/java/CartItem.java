@@ -1,7 +1,7 @@
 public class CartItem {
 
-    public int id;
-    public int quantity;
+    private int id;
+    private int quantity;
 
     public CartItem(int id, int quantity) {
         this.id = id;
@@ -15,5 +15,13 @@ public class CartItem {
 
     public void decreaseQuantity() {
         this.quantity -= 1;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getQuantity() {
+        return quantity;
     }
 }

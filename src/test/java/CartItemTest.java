@@ -16,23 +16,23 @@ public class CartItemTest {
 
     @Test
     public void testCartItemHasIdAndQuantity() {
-        assertEquals(1, shoes.id);
-        assertEquals(1, shoes.quantity);
+        assertEquals(1, shoes.getId());
+        assertEquals(1, shoes.getQuantity());
     }
 
     @Test
     public void testCanIncreaseCartItemQuantity() {
-        int initialQuantity = shoes.quantity;
+        int initialQuantity = shoes.getQuantity();
         shoes.increaseQuantity();
-        int finalQuantity = shoes.quantity;
+        int finalQuantity = shoes.getQuantity();
         assertEquals(1, finalQuantity - initialQuantity);
     }
 
     @Test
     public void testCanDecreaseCartItemQuantity() {
-        int initialQuantity = shoes.quantity;
+        int initialQuantity = shoes.getQuantity();
         shoes.decreaseQuantity();
-        int finalQuantity = shoes.quantity;
+        int finalQuantity = shoes.getQuantity();
         assertEquals(-1, finalQuantity - initialQuantity);
     }
 
