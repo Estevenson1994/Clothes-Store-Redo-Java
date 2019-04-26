@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Cart {
 
-    public List<CartItem> basket;
+    private List<CartItem> basket;
 
     public Cart() {
         this.basket = new ArrayList<>();
@@ -18,6 +18,7 @@ public class Cart {
         this.basket.remove(item);
     }
 
-
-
+    public List<CartItem> getBasket() {
+        return basket;
+    }
 }

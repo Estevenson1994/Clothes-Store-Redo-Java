@@ -24,14 +24,14 @@ public class CartTest {
 
     @Test
     public void testCartInitiallyHasAnEmptyBasket() {
-        assertEquals(0, cart.basket.size());
+        assertEquals(0, cart.getBasket().size());
     }
 
     @Test
     public void testCartCanHadAnItemToBasket() {
         cart.addItem(mockedCartItem);
-        assertThat(cart.basket, hasItems(mockedCartItem));
-        assertEquals(1, cart.basket.size());
+        assertThat(cart.getBasket(), hasItems(mockedCartItem));
+        assertEquals(1, cart.getBasket().size());
 
     }
 
@@ -39,8 +39,8 @@ public class CartTest {
     public void testCartCanRemoveItemFromBasket() {
         cart.addItem(mockedCartItem);
         cart.removeItem(mockedCartItem);
-        assertThat(cart.basket, not(hasItems(mockedCartItem)));
-        assertEquals(0, cart.basket.size());
+        assertThat(cart.getBasket(), not(hasItems(mockedCartItem)));
+        assertEquals(0, cart.getBasket().size());
     }
 
 }
